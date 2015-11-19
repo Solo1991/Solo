@@ -24,9 +24,9 @@
 		A57AB4241BFB6E6500012F62 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB4161BFB6E6500012F62 /* View+SnapKit.swift */; };
 		A57AB4251BFB6E6500012F62 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AB4171BFB6E6500012F62 /* ViewController+SnapKit.swift */; };
 		A59F9BBC1BFCD30E0076221A /* JFGoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BBB1BFCD30E0076221A /* JFGoodModel.swift */; };
-		A59F9BCA1BFCD3220076221A /* JFGoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BBF1BFCD3220076221A /* JFGoodListViewController.swift */; };
+		A59F9BCA1BFCD3220076221A /* JFGoodListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BBF1BFCD3220076221A /* JFGoodListVC.swift */; };
 		A59F9BCB1BFCD3220076221A /* JFGoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC21BFCD3220076221A /* JFGoodListCell.swift */; };
-		A59F9BCC1BFCD3220076221A /* JFShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC51BFCD3220076221A /* JFShoppingCartViewController.swift */; };
+		A59F9BCC1BFCD3220076221A /* JFShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC51BFCD3220076221A /* JFShoppingCartVC.swift */; };
 		A59F9BCD1BFCD3220076221A /* JFOldPriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC81BFCD3220076221A /* JFOldPriceLabel.swift */; };
 		A59F9BCE1BFCD3220076221A /* JFShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F9BC91BFCD3220076221A /* JFShoppingCartCell.swift */; };
 /* End PBXBuildFile section */
@@ -52,9 +52,9 @@
 		A57AB4161BFB6E6500012F62 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		A57AB4171BFB6E6500012F62 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		A59F9BBB1BFCD30E0076221A /* JFGoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodModel.swift; sourceTree = "<group>"; };
-		A59F9BBF1BFCD3220076221A /* JFGoodListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodListViewController.swift; sourceTree = "<group>"; };
+		A59F9BBF1BFCD3220076221A /* JFGoodListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodListVC.swift; sourceTree = "<group>"; };
 		A59F9BC21BFCD3220076221A /* JFGoodListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFGoodListCell.swift; sourceTree = "<group>"; };
-		A59F9BC51BFCD3220076221A /* JFShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartViewController.swift; sourceTree = "<group>"; };
+		A59F9BC51BFCD3220076221A /* JFShoppingCartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartVC.swift; sourceTree = "<group>"; };
 		A59F9BC81BFCD3220076221A /* JFOldPriceLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOldPriceLabel.swift; sourceTree = "<group>"; };
 		A59F9BC91BFCD3220076221A /* JFShoppingCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,7 +159,7 @@
 		A59F9BBE1BFCD3220076221A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A59F9BBF1BFCD3220076221A /* JFGoodListViewController.swift */,
+				A59F9BBF1BFCD3220076221A /* JFGoodListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 		A59F9BC41BFCD3220076221A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A59F9BC51BFCD3220076221A /* JFShoppingCartViewController.swift */,
+				A59F9BC51BFCD3220076221A /* JFShoppingCartVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 				A57AB4191BFB6E6500012F62 /* ConstraintAttributes.swift in Sources */,
 				A57AB4211BFB6E6500012F62 /* LayoutConstraint.swift in Sources */,
 				A57AB4251BFB6E6500012F62 /* ViewController+SnapKit.swift in Sources */,
-				A59F9BCC1BFCD3220076221A /* JFShoppingCartViewController.swift in Sources */,
+				A59F9BCC1BFCD3220076221A /* JFShoppingCartVC.swift in Sources */,
 				A57AB4241BFB6E6500012F62 /* View+SnapKit.swift in Sources */,
-				A59F9BCA1BFCD3220076221A /* JFGoodListViewController.swift in Sources */,
+				A59F9BCA1BFCD3220076221A /* JFGoodListVC.swift in Sources */,
 				A57AB41C1BFB6E6500012F62 /* ConstraintMaker.swift in Sources */,
 				A57AB41A1BFB6E6500012F62 /* ConstraintDescription.swift in Sources */,
 				A59F9BCB1BFCD3220076221A /* JFGoodListCell.swift in Sources */,

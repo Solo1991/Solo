@@ -12,7 +12,7 @@ import UIKit
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
 
-class JFGoodListViewController: UIViewController {
+class JFGoodListVC: UIViewController {
     
     // MARK: - 属性
     /// 商品模型数组，初始化
@@ -137,7 +137,7 @@ class JFGoodListViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate 数据源和代理方法
-extension JFGoodListViewController: UITableViewDataSource, UITableViewDelegate {
+extension JFGoodListVC: UITableViewDataSource, UITableViewDelegate {
     
     // 第section组有多少个cell,我们这里一共就一组。所以直接返回模型数组的长度
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -165,7 +165,7 @@ extension JFGoodListViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 // view上的一些事件处理在这个类扩展里
-extension JFGoodListViewController {
+extension JFGoodListVC {
     
     /**
      当点击了购物车触发，modal到购物车控制器
@@ -174,7 +174,7 @@ extension JFGoodListViewController {
      */
     @objc private func didTappedCarButton(button: UIButton) {
         
-        let shoppingCartVc = JFShoppingCartViewController()
+        let shoppingCartVc = JFShoppingCartVC()
         
         // 传递商品模型数组
         shoppingCartVc.addGoodArray = addGoodArray
@@ -185,7 +185,7 @@ extension JFGoodListViewController {
 }
 
 // MARK: - JFGoodListCellDelegate代理方法
-extension JFGoodListViewController: JFGoodListCellDelegate {
+extension JFGoodListVC: JFGoodListCellDelegate {
     
     /**
      代理回调方法，当点击了cell上的购买按钮后触发
@@ -213,7 +213,7 @@ extension JFGoodListViewController: JFGoodListCellDelegate {
 }
 
 // MARK: - 商品图片抛入购物车的动画效果
-extension JFGoodListViewController {
+extension JFGoodListVC {
     
     /**
      开始动画

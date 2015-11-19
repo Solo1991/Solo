@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JFShoppingCartViewController: UIViewController {
+class JFShoppingCartVC: UIViewController {
     
     // MARK: - 属性
     /// 已经添加进购物车的商品模型数组，初始化
@@ -165,7 +165,7 @@ class JFShoppingCartViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate数据、代理
-extension JFShoppingCartViewController: UITableViewDataSource, UITableViewDelegate {
+extension JFShoppingCartVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return addGoodArray?.count ?? 0
@@ -194,7 +194,7 @@ extension JFShoppingCartViewController: UITableViewDataSource, UITableViewDelega
 }
 
 // MARK: - view上的一些事件处理
-extension JFShoppingCartViewController {
+extension JFShoppingCartVC {
     
     /**
      返回按钮
@@ -250,7 +250,7 @@ extension JFShoppingCartViewController {
 }
 
 // MARK: - JFShoppingCartCellDelegate代理方法
-extension JFShoppingCartViewController: JFShoppingCartCellDelegate {
+extension JFShoppingCartVC: JFShoppingCartCellDelegate {
     
     /**
      当点击了cell中加、减按钮
