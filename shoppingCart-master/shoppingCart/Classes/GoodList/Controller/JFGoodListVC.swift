@@ -31,16 +31,14 @@ class JFGoodListVC: UIViewController {
     var layer: CALayer?
     
     // MARK: - view生命周期
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
-        // 提醒：这个方法中一般用于初始化控制器中的一些数据、添加子控件等。但是这个方法获取的frame并不一定准确，所以不建议在这个方法约束子控件
-        
-        // 初始化模型数组，也就是搞点假数据。这里整10个模型
+
         for i in 0..<10 {
             var dict = [String : AnyObject]()
             dict["iconName"] = "goodicon_\(i)"
-            dict["title"] = "\(i + 1)阿哥"
+            dict["title"] = "Solo\(i + 1)"
             dict["desc"] = "这是第\(i + 1)个商品"
             dict["newPrice"] = "1000\(i)"
             dict["oldPrice"] = "2000\(i)"
@@ -66,38 +64,29 @@ class JFGoodListVC: UIViewController {
     /**
      准备子控件方法，在这个方法中我们可以创建并添加子控件到view
      */
-    private func prepareUI() {
-        
-        // 标题
+    private func prepareUI()
+    {
         navigationItem.title = "商品列表"
-        
-        // 添加导航栏上的购物车按钮和已经添加的商品数量label
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: cartButton)
-        
-        // 添加购物车按钮上的label
         navigationController?.navigationBar.addSubview(addCountLabel)
         navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
-        
-        // 添加tableView到控制器的view上
         view.addSubview(tableView)
-        
-        // 注册cell
         tableView.registerClass(JFGoodListCell.self, forCellReuseIdentifier: goodListCellIdentifier)
     }
     
     /**
      约束子控件的方法
      */
-    private func layoutUI() {
-        
-        // 约束tableview，让它全屏显示。注意：这里我使用了第三方约束框架（SnapKit）。如果还不会使用，请学习
-        tableView.snp_makeConstraints { (make) -> Void in
+    private func layoutUI()
+    {   //第三方约束框架（SnapKit）
+        tableView.snp_makeConstraints
+            {
+                (make) -> Void in
             make.edges.equalTo(view.snp_edges)
         }
     }
 
-    // MARK: - 懒加载
-    /// tableView
+
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.rowHeight = 80
@@ -167,11 +156,6 @@ extension JFGoodListVC: UITableViewDataSource, UITableViewDelegate {
 // view上的一些事件处理在这个类扩展里
 extension JFGoodListVC {
     
-    /**
-     当点击了购物车触发，modal到购物车控制器
-     
-     - parameter button: 购物车按钮
-     */
     @objc private func didTappedCarButton(button: UIButton) {
         
         let shoppingCartVc = JFShoppingCartVC()
@@ -185,17 +169,12 @@ extension JFGoodListVC {
 }
 
 // MARK: - JFGoodListCellDelegate代理方法
-extension JFGoodListVC: JFGoodListCellDelegate {
-    
-    /**
-     代理回调方法，当点击了cell上的购买按钮后触发
-     
-     - parameter cell:     被点击的cell
-     - parameter iconView: 被点击的cell上的图标对象
-     */
+extension JFGoodListVC: JFGoodListCellDelegate
+{
     func goodListCell(cell: JFGoodListCell, iconView: UIImageView) {
         
-        guard let indexPath = tableView.indexPathForCell(cell) else {
+        guard let indexPath = tableView.indexPathForCell(cell) else
+        {
             return
         }
         
@@ -295,7 +274,8 @@ extension JFGoodListVC {
             layer = nil
             
             // 如果商品数大于0，显示购物车里的商品数量
-            if self.addGoodArray.count > 0 {
+            if self.addGoodArray.count > 0
+            {
                 addCountLabel.hidden = false
             }
             
@@ -306,7 +286,7 @@ extension JFGoodListVC {
             addCountLabel.layer.addAnimation(goodCountAnimation, forKey: nil)
             
             // 购物车抖动
-            let cartAnimation = CABasicAnimation(keyPath: "transform.translation.y")
+            let cartAnimation = CABasicAnimation(keyPath: "transform.translation.x")
             cartAnimation.duration = 0.25
             cartAnimation.fromValue = -5
             cartAnimation.toValue = 5
