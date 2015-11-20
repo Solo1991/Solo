@@ -134,21 +134,12 @@ extension JFGoodListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     // 创建每个cell
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        // 从缓存池创建cell，如果没有从缓存池创建成功就根据注册的cell重用标识符创建一个新的cell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier(goodListCellIdentifier, forIndexPath: indexPath) as! JFGoodListCell
-        
-        // 取消选中效果
         cell.selectionStyle = UITableViewCellSelectionStyle.None
-        
-        // 为cell传递数据
         cell.goodModel = goodArray[indexPath.row]
-        
-        // 指定代理
         cell.delegate = self
-        
-        // 返回创建好的cell
         return cell
     }
 }
