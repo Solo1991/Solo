@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuildFileFootVC">
+            <connections>
+                <outlet property="firstImageView" destination="P9F-JJ-O4p" id="qO1-wz-T3b"/>
+                <outlet property="fourImageView" destination="T3Z-uY-M3c" id="W9u-ZU-Oq1"/>
+                <outlet property="secondImageView" destination="vCW-vP-Iqw" id="1xk-Ro-JuK"/>
+                <outlet property="thirdImageView" destination="Jft-Mp-hd5" id="0kr-GU-1H2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="有图有真相.png" highlightedImage="有图有真相.png" translatesAutoresizingMaskIntoConstraints="NO" id="P9F-JJ-O4p">
+                    <rect key="frame" x="16" y="5" width="60" height="60"/>
+                </imageView>
+                <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="添加照片.png" highlightedImage="添加照片.png" translatesAutoresizingMaskIntoConstraints="NO" id="vCW-vP-Iqw">
+                    <rect key="frame" x="90" y="5" width="60" height="60"/>
+                </imageView>
+                <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="添加照片.png" highlightedImage="添加照片.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T3Z-uY-M3c">
+                    <rect key="frame" x="233" y="5" width="60" height="60"/>
+                </imageView>
+                <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="添加照片.png" highlightedImage="添加照片.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-Mp-hd5">
+                    <rect key="frame" x="165" y="5" width="60" height="60"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1k-nx-dTc">
+                    <rect key="frame" x="130" y="132" width="60" height="60"/>
+                    <state key="normal" title="Button" image="立即发布.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendBtn:" destination="-1" eventType="touchUpInside" id="bY1-3N-iOi"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请上传" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qig-ZG-fhw">
+                    <rect key="frame" x="25" y="16" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您本人的照片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWk-ar-5s2">
+                    <rect key="frame" x="16" y="32" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="582" y="162"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="有图有真相.png" width="100" height="100"/>
+        <image name="添加照片.png" width="100" height="100"/>
+        <image name="立即发布.png" width="116" height="116"/>
+    </resources>
+</document>

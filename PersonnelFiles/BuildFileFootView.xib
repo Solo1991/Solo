@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHu-XD-oPW" userLabel="btn1">
+                    <rect key="frame" x="16" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="BlS-mP-Y85"/>
+                        <constraint firstAttribute="width" constant="60" id="UdD-q0-Gtc"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="有图有真相.png">
+                        <color key="titleColor" red="0.98823529409999999" green="0.42352941179999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIc-vS-ByS" userLabel="btn2">
+                    <rect key="frame" x="97" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="6tE-lT-cGG"/>
+                        <constraint firstAttribute="width" constant="60" id="YEO-n2-eb9"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="添加照片.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCR-9n-Spy" userLabel="btn3">
+                    <rect key="frame" x="176" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="G91-Ki-6cE"/>
+                        <constraint firstAttribute="width" constant="60" id="GHy-nE-jaH"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="添加照片.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FL1-Rz-OR9" userLabel="btn4">
+                    <rect key="frame" x="252" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="AZR-hJ-p1j"/>
+                        <constraint firstAttribute="width" constant="60" id="cAR-VB-QDJ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="添加照片.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-c2-Ujq" userLabel="立即发布">
+                    <rect key="frame" x="130" y="90" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="P8Z-oa-lZo"/>
+                        <constraint firstAttribute="width" constant="60" id="UeP-vN-TA1"/>
+                    </constraints>
+                    <state key="normal" image="立即发布.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请上传" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etE-rV-SQx">
+                    <rect key="frame" x="25" y="23" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您本人的照片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sau-uy-SZo">
+                    <rect key="frame" x="16" y="36" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XCR-9n-Spy" firstAttribute="top" secondItem="FL1-Rz-OR9" secondAttribute="top" id="0MS-cU-f2U"/>
+                <constraint firstItem="ZHu-XD-oPW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="7aW-vN-4kQ"/>
+                <constraint firstItem="FL1-Rz-OR9" firstAttribute="leading" secondItem="XCR-9n-Spy" secondAttribute="trailing" constant="16" id="8g3-Bp-zdz"/>
+                <constraint firstItem="JIc-vS-ByS" firstAttribute="leading" secondItem="ZHu-XD-oPW" secondAttribute="trailing" constant="21" id="9ME-nk-wct"/>
+                <constraint firstItem="XCR-9n-Spy" firstAttribute="leading" secondItem="JIc-vS-ByS" secondAttribute="trailing" constant="19" id="9Ra-sW-zzl"/>
+                <constraint firstItem="TfZ-c2-Ujq" firstAttribute="top" secondItem="JIc-vS-ByS" secondAttribute="bottom" constant="20" id="F9Z-sr-6ng"/>
+                <constraint firstItem="JIc-vS-ByS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Tuq-W9-esf"/>
+                <constraint firstAttribute="centerX" secondItem="TfZ-c2-Ujq" secondAttribute="centerX" id="dIR-IR-MGw"/>
+                <constraint firstItem="XCR-9n-Spy" firstAttribute="top" secondItem="JIc-vS-ByS" secondAttribute="top" id="eqO-fI-uiU"/>
+                <constraint firstItem="ZHu-XD-oPW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="zm4-OC-ihG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="547" y="223"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="有图有真相.png" width="100" height="100"/>
+        <image name="添加照片.png" width="100" height="100"/>
+        <image name="立即发布.png" width="116" height="116"/>
+    </resources>
+</document>

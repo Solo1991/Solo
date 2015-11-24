@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainSearchBar">
+            <connections>
+                <outlet property="myPicker" destination="cT8-xd-eZ8" id="1Ef-0I-oEs"/>
+                <outlet property="pickerBgView" destination="i5M-Pr-FkT" id="9P3-h7-gh7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cT8-xd-eZ8">
+                    <rect key="frame" x="0.0" y="34" width="320" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1Z-ir-FkI">
+                    <rect key="frame" x="240" y="0.0" width="80" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Qnp-Va-kRE"/>
+                        <constraint firstAttribute="height" constant="34" id="jNW-h4-mQN"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.98823529409999999" green="0.42352941179999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sureBtn:" destination="-1" eventType="touchUpInside" id="nFR-ls-Yvv"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择要查询的年龄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQf-6Z-0tF">
+                    <rect key="frame" x="80" y="0.0" width="160" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="bRK-HE-kJW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.98823529409999999" green="0.42352941179999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BX-8D-tn9">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="QsS-0K-EoB"/>
+                        <constraint firstAttribute="width" constant="80" id="k8j-ld-7ON"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.98823529409999999" green="0.42352941179999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelBtn:" destination="-1" eventType="touchUpInside" id="K1U-3I-mb6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SQf-6Z-0tF" firstAttribute="leading" secondItem="6BX-8D-tn9" secondAttribute="trailing" id="7Iq-0B-o9e"/>
+                <constraint firstItem="cT8-xd-eZ8" firstAttribute="top" secondItem="6BX-8D-tn9" secondAttribute="bottom" id="9c4-lg-EI5"/>
+                <constraint firstItem="cT8-xd-eZ8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AKW-JB-jI9"/>
+                <constraint firstItem="SQf-6Z-0tF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="INe-CV-Gaz"/>
+                <constraint firstAttribute="trailing" secondItem="d1Z-ir-FkI" secondAttribute="trailing" id="O03-37-RCY"/>
+                <constraint firstItem="d1Z-ir-FkI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cf6-N9-UlJ"/>
+                <constraint firstItem="d1Z-ir-FkI" firstAttribute="leading" secondItem="SQf-6Z-0tF" secondAttribute="trailing" id="fjp-RQ-mkL"/>
+                <constraint firstAttribute="trailing" secondItem="cT8-xd-eZ8" secondAttribute="trailing" id="hiP-w5-xaj"/>
+                <constraint firstItem="6BX-8D-tn9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ppz-tR-C9i"/>
+                <constraint firstItem="6BX-8D-tn9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yxB-dh-to8"/>
+                <constraint firstAttribute="bottom" secondItem="cT8-xd-eZ8" secondAttribute="bottom" constant="5" id="zwJ-MP-ls2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="215" y="184.5"/>
+        </view>
+    </objects>
+</document>

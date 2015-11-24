@@ -1,0 +1,88 @@
+//
+//  Header.pch
+//  PersonnelFiles
+//
+//  Created by Solo on 15/6/5.
+//  Copyright (c) 2015年 Solo. All rights reserved.
+//
+
+#ifndef PersonnelFiles_Header_pch
+#define PersonnelFiles_Header_pch
+//cellid
+#define mainViewID      @"MainTableVIewCellID"
+#define commentCellID   @"UserInfoCell"
+
+//版本
+#define version  [[UIDevice currentDevice] systemVersion].doubleValue
+
+
+
+#import "DXAlertView.h"
+#import "customActivityIndicator.h"
+//backgroundcolor
+#define mainBackColor   [UIColor colorWithRed:252/255.0 green:108/255.0 blue:64/255.0 alpha:1]
+#define CellIdentifier @"PublicPage"
+
+
+#define kSinaAppKey                         @"3035350460"//@"3173028960"
+#define kSinaRedirectURI                    @"http://sns.whalecloud.com/sina2/callback"
+#define kSinaAppSecret                      @"40ad298d51a81081c9f8265613341b1f"//     @"266980982651301f613d4fdd2730875b"
+#define kSinaLoginSuccessNotification       @"ksinaloginsuccessnotification"
+#define kQQLoginSuccessNotification         @"kqqloginsuccessnotification"
+#define kWXLoginSuccessNotification         @"kwxloginsuccessnotification"
+#define INTERNETWORK_STATUS_CHANGE_NOTIFY   @"internetwork_status_change_notify"
+
+#define KQQAPPIDTest @"222222"
+#define KQQAPPID     @"1104698422"
+#define KQQAPPKey    @"6HCVKcYxyaax0YeH"
+#define KQQDIDLOGINKEY @"kqqdidloginkey"
+
+
+//public static String WEIXIN_APPID = "wx0acb1f4b24608b3c";
+//public static String WEIXIN_APPSECRET = "155e3844a581cf77e948313139105806";
+
+#define KWeChatAPPkey                  @"wx00fae03c33f7f2ed"
+#define KWeChatSecret                  @"226bb8753d0a66aa3a739adbb223b606"
+
+// ios version
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+//*******************
+#define MainWidth       [UIScreen mainScreen].bounds.size.width
+#define MainHeight      [UIScreen mainScreen].bounds.size.height
+#define mainSearchBarHeight     40
+#define MainNavHeight           64
+#define buttonViewHeight        50
+#define testPrint               NSLog(@"%s",__func__);
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+//#define randID @"831528"
+//************************快速图片*****************************
+#define QuickImage(image)  [UIImage imageNamed:image]
+#define QuickOriginalImage(image) [[UIImage imageNamed:image]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+
+//************************快速颜色*****************************
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+//************************国际化*****************************
+#define STR(key)     NSLocalizedString(key, nil)
+//************************主题颜色*****************************
+#define ThemeColor  [UIColor colorWithRed:252.0/255.0 green:108.0/255.0 blue:64.0/255.0 alpha:1]
+
+
+#ifdef DEBUG
+#define NLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {};
+#endif
+//************************输出日志************************
+#ifdef DEBUG
+#define CLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define CLog(format, ...)
+#endif
+
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#endif

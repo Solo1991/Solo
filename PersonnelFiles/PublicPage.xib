@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PublicPage" id="gTV-IL-0wX" customClass="PublicPage">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aoS-dZ-Mhd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.87843137250000003" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="aoS-dZ-Mhd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3Z4-7d-5zu"/>
+                <constraint firstAttribute="bottom" secondItem="aoS-dZ-Mhd" secondAttribute="bottom" id="5ex-nY-Fu6"/>
+                <constraint firstAttribute="trailing" secondItem="aoS-dZ-Mhd" secondAttribute="trailing" id="gSI-44-mPz"/>
+                <constraint firstItem="aoS-dZ-Mhd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qRJ-ee-wh8"/>
+            </constraints>
+            <connections>
+                <outlet property="publicTableView" destination="aoS-dZ-Mhd" id="FmW-L6-pFm"/>
+            </connections>
+            <point key="canvasLocation" x="754" y="187"/>
+        </collectionViewCell>
+    </objects>
+</document>
